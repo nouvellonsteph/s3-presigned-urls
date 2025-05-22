@@ -2,6 +2,10 @@
 
 This project contains a Cloudflare Worker that generates signed URLs for objects stored in an AWS S3 bucket. The worker signs requests dynamically using the `aws4fetch` library and proxies requests to S3, enabling caching via Cloudflare without using the Cache API explicitly.
 
+## Deploy with Cloudflare workers
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Fnouvellonsteph%2Fs3-presigned-urls)
+
 ## Features
 
 - Signs S3 object URLs on the fly using AWS Signature Version 4.
